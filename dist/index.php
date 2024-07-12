@@ -45,7 +45,7 @@ require_login();
                             <div class="col-4">
                                 <label for="valor-compra" class="form-label" style="margin-left: 2px;">Valor residual em cartão <span style="color:red;">*<span></label>
                                 <div class="input-group">
-                                    <input type="text" class="form-control" id="valor-residual" placeholder="0" pattern="^[\d]{1,10}" required>
+                                    <input type="text" class="form-control" id="valor-residual" value="0" placeholder="0" pattern="^[\d]{1,10}" required>
                                     <span class="input-group-text">€</span>
                                 </div>
                                 <div class="form-text" id="aviso-valor-residual">Valor total no cartão do cliente à data.</div>
@@ -79,7 +79,7 @@ require_login();
                                 <div class="col-4">
                                     <label for="valor-compra" class="form-label" style="margin-left: 2px;">Valor a ser descontado <span style="color:red;">*<span></label>
                                     <div class="input-group">
-                                        <input type="text" class="form-control" id="valor-descontado" placeholder="0" pattern="^[\d]{1,10}" required>
+                                        <input type="text" class="form-control" id="valor-descontado" value="0" placeholder="0" pattern="^[\d]{1,10}" required>
                                         <span class="input-group-text">€</span>
                                     </div>
                                     <div class="form-text" id="aviso-acumulado">Valor a ser descontado do cartão do cliente.</div>

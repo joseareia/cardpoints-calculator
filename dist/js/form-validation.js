@@ -20,13 +20,11 @@ $(document).ready(function () {
                         success: function (data) {
                             let response = JSON.parse(data);
                             if (response['code'] === 200) {
-                                console.log(response);
-                                window.open(response['pdfurl'], "_blank")
+                                window.open(response['pdfurl'], "_blank");
                             } else {
                                 alert("Erro no envio da informação.\nCode: " + response['code'] + "\nInfo: " + response['message']);
                             }
                             clean();
-                            window.location.reload();
                         }
                     });
                 }
@@ -48,5 +46,7 @@ $(document).ready(function () {
         $('.spinner-border').remove();
         form.classList.remove('was-validated');
         $('#resetBtn').click();
+        $('#valor-descontado').val(0);
+        $('#valor-residual').val(0);
     }
 });
